@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a438457e76f88824bb9806af8cbaefe4, type: 3}
+  m_Name: NewTalk
+  m_EditorClassIdentifier: 
+  DialoguePiecesList:
+  - ID: Piece01
+    image: {fileID: 21300000, guid: e9d4143c19529834981ac6821a04aecd, type: 3}
+    text: Hello,I'm first Dialogue!
+    QuestDataSo: {fileID: 0}
+    OptionsList:
+    - text: First Answer
+      targetID: 
+      takeQuest: 0
+    - text: Scent Answer
+      targetID: Piece02
+      takeQuest: 0
+  - ID: Piece02
+    image: {fileID: 21300000, guid: f73f68fe6815f5548a6c2a61b9e49add, type: 3}
+    text: "Hello,I need you go to \rwipe out Slime"
+    QuestDataSo: {fileID: 11400000, guid: a112077c0085c7746bda741a96aae332, type: 2}
+    OptionsList:
+    - text: Ok
+      targetID: 
+      takeQuest: 1
+    - text: No
+      targetID: 
+      takeQuest: 0
